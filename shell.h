@@ -11,6 +11,7 @@
 #include <limits.h>
 #include <fcntl.h>
 #include <fcntl.h>
+#include <errno.h>
 
 #define READ_BUF_SIZE 1024
 #define WRITE_BUF_SIZE 1024
@@ -161,7 +162,7 @@ int _myexit(info_t *);
 int _mycd(info_t *);
 int _myhelp(info_t *);
 
-int _myhistory(info_t *);
+/*int _myhistory(info_t *);*/
 int _myalias(info_t *);
 
 ssize_t get_input(info_t *);
